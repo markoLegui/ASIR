@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    min-width: 90vh;
 }
 
 main {
@@ -32,14 +33,14 @@ ul {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    margin: 1rem;
+    padding: 1rem 2rem;
 }
 
 ul > li:nth-child(5) {
     margin-left: auto;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     display: block;
@@ -57,9 +58,15 @@ a{
     /*! white-space: nowrap; */
 }
 
-nav ul li:nth-last-child(1), nav ul li:nth-last-child(2) {
+nav ul li:nth-last-child(1) a, nav ul li:nth-last-child(2) a {
     padding: 0.7rem 1rem;
+    border-radius: 3rem;
     background-color: gray;
+}
+
+nav ul li:nth-last-child(2) a {
+    background-color: black;
+    color: white
 }
 
 /* footer */
