@@ -6,22 +6,24 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 70rem;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
 /* HEADER */
+body > header {
+    padding: 1rem;
+    background-color: #0e0d1c;
+}
 
 header > nav > ul {
-    background-color: #0e0d1c;
     list-style: none;
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 1rem;
-    color:#c6d2d9
+    color:#c6d2d9;
+    min-width: 50rem;
 }
 
 nav > ul > li > a {
@@ -49,55 +51,32 @@ nav > ul > li:nth-last-child(2) {
 /* MAIN */
 
 main {
-    background-color: tan;
+    background: linear-gradient(to bottom, #061423, #15314b);
     min-height: 5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-main > ul {
-    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    flex-grow: 1;
 }
 
-section {
+main > figure {
+    width: 50%;
+    min-width: 30rem;
+
+}
+
+main > figure > img {
+    width: 100%;
+}
+
+main > section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
-
-section > ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-}
-
-section > ul > li > a {
-    padding: 1rem 2.5rem;
-    background-color: green;
-    border-radius: 0.3rem;
+    gap: 1rem;
     color: white;
+    min-width: 22rem;
 }
 
-section > ul > li:nth-child(2) > a {
-    padding: 1rem 2.5rem;
-    background-color: white;
-    border-radius: 0.3rem;
-    color:#000;
-}
-
-
-.portatil {
-    max-width: 40rem;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-    display: block;
+main > section > img {
+    width: 5rem;
 }
