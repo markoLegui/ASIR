@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: white;
+}
+
+header>nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header>nav>ul>li:nth-child(1) {
+    padding-right: 1rem;
+    border-right: 2px solid black;
+}
+
+header>nav>section {
+    display: flex;
+    width: 50vw;
+}
+
+header>nav>section>p {
+    display: flex;
+    margin: auto;
+}
+
+header>nav>a {
+    background-color: black;
+    color: white;
+    padding: 0 1rem;
+    border-radius: 3rem;
+}
+
+/* NAV SECTION */
+
+section>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;  
+    background-color: blue;  
+}
+
+section>nav>h1 {
+    display: flex;
+    text-align: center;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+/* SECTION MAIN */
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+main>section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.prueba {
+    height: 60vh;
+    background-color: white;
+    padding: 2rem; 
+}
+
+article>h1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+section>p {
+    align-self: flex-end;
+    margin: 0 2rem 2rem;
+}
+
+section>p>a {
+display: inline-block;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 2rem;
+    transition: opacity 0.3s;
+}
+
+section > p > a:hover {
+    opacity: 0.8;
+}
+
+section:nth-last-child(1) {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #00331f;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
